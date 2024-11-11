@@ -36,7 +36,7 @@ def main() -> None:
         "password", help="Password you used to create your bot's account"
     )
     parser.add_argument(
-        "--instance", default="https://botsin.space", help="Mastodon instance"
+        "--instance", default="https://mas.to", help="Mastodon instance"
     )
     args = parser.parse_args()
     mastodon_create_app(args.app_name, args.email, args.password, args.instance)
